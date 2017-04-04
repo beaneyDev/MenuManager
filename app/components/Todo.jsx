@@ -16,17 +16,10 @@ export var Todo = React.createClass({
     }
 
     return (
-      <div className={todoClassName} onClick={() => {
-          dispatch(actions.toggleTodo(id))
-        }}>
-        <div>
-          <input type="checkbox" checked={completed}/>
+        <div className="menuItem">
+          <div className="todo__sectionstrip"></div>
+          <p className="todo__menutext">{menuText}</p>
         </div>
-        <div>
-          <p>{menuText}</p>
-          <p className="todo__subtext">{renderDate()}</p>
-        </div>
-      </div>
     )
   }
 });

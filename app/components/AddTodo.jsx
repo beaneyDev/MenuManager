@@ -30,6 +30,8 @@ export var AddTodo = React.createClass({
     }
 
     dispatch(actions.startAddTodo(menuItem));
+    this.refs.menuText.value = "";
+    this.refs.action.value = "none";
   },
   render: function () {
     var invalidFields = this.state;

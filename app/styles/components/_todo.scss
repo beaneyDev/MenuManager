@@ -1,21 +1,18 @@
-.todo {
-  align-items: center;
-  cursor: pointer;
+.menuItem {
   display: flex;
-  padding: 1rem;
-  transition: background .3s ease;
+  align-items: center;
+}
 
-  p, input {
-    margin: 0;
-  }
+.todo__sectionstrip {
+  background-color: red;
+  display: flex;
+  width: 10px;
+  height: 20px;
+}
 
-  > :first-child {
-    margin-right: 1rem;
-  }
-
-  &:hover {
-    background: #f0f0f0;
-  }
+.todo__menutext {
+  display: flex;
+  margin: 0;
 }
 
 .todo__subtext {
